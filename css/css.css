@@ -14,8 +14,9 @@ body{
 a{
     color: black;
     background-color: white;
-    font-weight: bold;
+    font-weight: bolder;
     text-decoration:  none;
+    font-size: 14pt;
 
 
 }
@@ -36,15 +37,12 @@ h1{
 
 h2{
     text-decoration: underline;
-    font-weight: bold;
-    font-size: 13pt;
+    font-weight: normal;
+    font-size: 14pt;
+    padding-bottom: 20px;
+    color: blue;
 }
-h3{
-    text-decoration: none;
-    font-size: 13pt;
-    font-weight: lighter;
 
-}
 
 ::selection{
     background: #dddddd; /*#0066ff;*/
@@ -74,8 +72,8 @@ p{
 }
 
 
-strong{
-    font-weight: bold;
+line{
+    text-decoration: underline;
 }
 
 em{
@@ -99,20 +97,48 @@ code{
 a.special_link{
     color: blue;
     background-color: white;
-    cursor: pointer;
-    font-weight: bolder;
+    font-weight: normal;
     text-decoration:  none;
 }
 a.special_link:hover{
-    color: white;
-    background-color: blue;
-    text-decoration:  none;
+    text-decoration:  underline;
+    cursor: pointer;
 
 }
 
+a.email_link{
+  color: black;
+  background-color: white;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 13pt;
 
+}
 
+a.email_link:hover{
+  color: black;
+  background-color: white;
+  text-decoration:  underline;
+  cursor: pointer;
 
+}
+
+a.title_link{
+  color: black;
+  background-color: white;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 20pt;
+
+}
+
+a.title_link:hover{
+  color: black;
+  background-color: white;
+  text-decoration:  underline;
+  cursor: pointer;
+
+}
 
 /* FRAME */
 #top, #bottom, #left, #right {
