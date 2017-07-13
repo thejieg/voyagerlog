@@ -11,23 +11,6 @@ body{
     background-color: white;
 }
 
-a{
-    color: black;
-    background-color: white;
-    font-weight: bolder;
-    text-decoration:  none;
-    font-size: 14pt;
-
-
-}
-a:hover{
-    color: black;
-    background-color: white;
-    text-decoration:  underline;
-    text-decoration-color: blue;
-    cursor: pointer;
-}
-
 h1{
     margin: 20px 0px;
     font-size: 16pt;
@@ -63,9 +46,20 @@ ul{
 }
 
 .block{
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.blocksmall{
+    margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.blocklarge{
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
 
 p{
     margin: 20px 0px;
@@ -80,6 +74,9 @@ em{
     font-style: italic;
 }
 
+strong{
+  font-weight: bold;
+}
 
 blockquote{
     border-left: 4px solid #dddddd;
@@ -94,24 +91,54 @@ code{
     padding: 5px;
 }
 
-a.special_link{
+a{
+    color: blue;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 12pt;
+
+
+}
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a.title_link{
     color: blue;
     background-color: white;
     font-weight: normal;
     text-decoration:  none;
+    font-size: 14pt;
 }
-a.special_link:hover{
+a.title_link:hover{
     text-decoration:  underline;
     cursor: pointer;
 
 }
 
+a.nav_link{
+  color: #8d8d8d;
+  background-color: white;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 13pt;
+
+}
+
+a.nav_link:hover{
+  color: black;
+  background-color: white;
+  text-decoration:  underline;
+  cursor: pointer;
+
+}
 a.email_link{
   color: black;
   background-color: white;
   font-weight: normal;
   text-decoration: none;
-  font-size: 13pt;
+  font-size: 12pt;
 
 }
 
@@ -123,21 +150,27 @@ a.email_link:hover{
 
 }
 
-a.title_link{
-  color: black;
+a.header_link{
+  color: blue;
   background-color: white;
   font-weight: normal;
   text-decoration: none;
-  font-size: 20pt;
+  font-size: 24pt;
 
 }
 
-a.title_link:hover{
-  color: black;
+a.header_link:hover{
+  color: blue;
   background-color: white;
   text-decoration:  underline;
   cursor: pointer;
 
+}
+
+hr.style1{
+	border-top: 1px solid;
+  color: #8d8d8d;
+  margin-bottom: 20px;
 }
 
 /* FRAME */
