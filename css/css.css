@@ -1,31 +1,27 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
+/* content styling */
 body{
-    font-family: 'Work Sans','Menlo',monospace;
+    font-family: 'Overpass Mono',monospace;
     width: 100%;
-    line-height: 165%;
     color: black;
     background-color: white;
 }
 
 h1{
-    margin: 20px 0px;
-    font-size: 16pt;
-    line-height: 180%;
+    margin: 40px 0px;
+    font-size: 32pt;
+    font-weight: bold;
+    font-family: 'Overpass Mono';
 
 }
 
 h2{
-    text-decoration: underline;
-    font-weight: normal;
-    font-size: 14pt;
-    padding-bottom: 20px;
-    color: blue;
-}
+    margin: 20px 0px;
+    font-weight: lighter;
+    font-size: 20pt;
+    font-family: 'Overpass Mono';
+    line-height: 140%;
 
+}
 
 ::selection{
     background: #dddddd; /*#0066ff;*/
@@ -34,35 +30,28 @@ h2{
 ul{
     list-style-type: disc;
 }
-
 #container{
-    width: 60%;
-    max-width: 1200px;
-    margin-left: 20%;
+    width: 65%;
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+#content_container{
+    width: 65%;
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-top: 5%;
 }
-#container img{
+#content_container img{
     width: 100%;
 }
 
-.block{
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
-.blocksmall{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.blocklarge{
-    margin-top: 40px;
-    margin-bottom: 100px;
-}
-
-
 p{
     margin: 20px 0px;
+    font-weight: 300;
 }
 
 
@@ -81,6 +70,7 @@ strong{
 blockquote{
     border-left: 4px solid #dddddd;
     margin: 20px 0px;
+    font-weight: 300;
     padding-left: 10px;
     color: #8e8e8e;
 
@@ -89,6 +79,41 @@ blockquote{
 code{
     background-color: #ccc;
     padding: 5px;
+}
+
+/*link styling*/
+
+a.header_link{
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  margin: 40px 0px;
+  font-size: 32pt;
+  line-height: 160%;
+  padding: 4px 8px;
+
+
+}
+a.header_link:hover{
+  cursor: pointer;
+  text-decoration: none;
+  background-color: blue;
+
+}
+a.subheader_link{
+  color: black;
+  background-color: white;
+  text-decoration: underline;
+  font-weight: lighter;
+  margin: 40px 0px;
+  font-size: 20pt;
+
+}
+a.subheader_link:hover{
+  color:blue;
+  text-decoration: underline;
+  cursor: pointer;
+
 }
 
 a{
@@ -104,15 +129,18 @@ a:hover{
     cursor: pointer;
 }
 
-a.title_link{
-    color: blue;
-    background-color: white;
+a.logtitle_link{
+    color: white;
+    background-color: black;
     font-weight: normal;
     text-decoration:  none;
     font-size: 14pt;
+    padding: 2px 4px;
 }
-a.title_link:hover{
-    text-decoration:  underline;
+a.logtitle_link:hover{
+    color: white;
+    background-color: blue;
+    text-decoration:  none;
     cursor: pointer;
 
 }
@@ -125,7 +153,6 @@ a.nav_link{
   font-size: 13pt;
 
 }
-
 a.nav_link:hover{
   color: black;
   background-color: white;
@@ -133,45 +160,50 @@ a.nav_link:hover{
   cursor: pointer;
 
 }
+
 a.email_link{
   color: black;
   background-color: white;
-  font-weight: normal;
+  font-weight: 300;
   text-decoration: none;
   font-size: 12pt;
 
 }
-
 a.email_link:hover{
-  color: black;
-  background-color: white;
   text-decoration:  underline;
   cursor: pointer;
 
 }
 
-a.header_link{
-  color: blue;
-  background-color: white;
-  font-weight: normal;
-  text-decoration: none;
-  font-size: 24pt;
-
-}
-
-a.header_link:hover{
-  color: blue;
-  background-color: white;
-  text-decoration:  underline;
-  cursor: pointer;
-
-}
+/* page divider styling*/
 
 hr.style1{
 	border-top: 1px solid;
   color: #8d8d8d;
   margin-bottom: 20px;
 }
+
+.block{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.blocksmall{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.blocklarge{
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+br{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
 
 /* FRAME */
 #top, #bottom, #left, #right {
