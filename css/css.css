@@ -46,7 +46,8 @@ ul{
     margin-top: 5%;
 }
 #content_container img{
-    width: 100%;
+    max-width: 100%;
+    max-height: auto;
 }
 
 p{
@@ -202,7 +203,6 @@ br{
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
 
 
 /* FRAME */
