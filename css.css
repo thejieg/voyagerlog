@@ -1,0 +1,237 @@
+/* content styling */
+body{
+    font-family: 'Overpass Mono',monospace;
+    width: 100%;
+    color: black;
+    background-color: white;
+}
+
+h1{
+    margin: 40px 0px;
+    font-size: 32pt;
+    font-weight: bold;
+    font-family: 'Overpass Mono';
+
+}
+
+h2{
+    margin: 20px 0px;
+    font-weight: lighter;
+    font-size: 20pt;
+    font-family: 'Overpass Mono';
+    line-height: 140%;
+
+}
+
+::selection{
+    background: #dddddd; /*#0066ff;*/
+}
+
+ul{
+    list-style-type: disc;
+}
+#container{
+    width: 65%;
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+#content_container{
+    width: 65%;
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+}
+#content_container img{
+    width: 100%;
+}
+
+p{
+    margin: 20px 0px;
+    font-weight: 300;
+}
+
+
+line{
+    text-decoration: underline;
+}
+
+em{
+    font-style: italic;
+}
+
+strong{
+  font-weight: bold;
+}
+
+blockquote{
+    border-left: 4px solid #dddddd;
+    margin: 20px 0px;
+    font-weight: 300;
+    padding-left: 10px;
+    color: #8e8e8e;
+
+}
+
+code{
+    background-color: #ccc;
+    padding: 5px;
+}
+
+/*link styling*/
+
+a.header_link{
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  margin: 40px 0px;
+  font-size: 32pt;
+  line-height: 160%;
+  padding: 4px 8px;
+
+
+}
+a.header_link:hover{
+  cursor: pointer;
+  text-decoration: none;
+  background-color: blue;
+
+}
+a.subheader_link{
+  color: black;
+  background-color: white;
+  text-decoration: underline;
+  font-weight: lighter;
+  margin: 40px 0px;
+  font-size: 20pt;
+
+}
+a.subheader_link:hover{
+  color:blue;
+  text-decoration: underline;
+  cursor: pointer;
+
+}
+
+a{
+    color: blue;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 12pt;
+
+
+}
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a.logtitle_link{
+    color: white;
+    background-color: black;
+    font-weight: normal;
+    text-decoration:  none;
+    font-size: 14pt;
+    padding: 2px 4px;
+}
+a.logtitle_link:hover{
+    color: white;
+    background-color: blue;
+    text-decoration:  none;
+    cursor: pointer;
+
+}
+
+a.nav_link{
+  color: #8d8d8d;
+  background-color: white;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 13pt;
+
+}
+a.nav_link:hover{
+  color: black;
+  background-color: white;
+  text-decoration:  underline;
+  cursor: pointer;
+
+}
+
+a.email_link{
+  color: black;
+  background-color: white;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 12pt;
+
+}
+a.email_link:hover{
+  text-decoration:  underline;
+  cursor: pointer;
+
+}
+
+/* page divider styling*/
+
+hr.style1{
+	border-top: 1px solid;
+  color: #8d8d8d;
+  margin-bottom: 20px;
+}
+
+.block{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.blocksmall{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.blocklarge{
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+br{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+/* FRAME */
+#top, #bottom, #left, #right {
+    background-color: black;
+    position: fixed;
+    z-index: 999;
+    visibility: hidden;
+}
+#left, #right {
+    top: 15px;
+    bottom: 15px;
+    width: 5px;
+}
+#left {
+    left: 15px;
+}
+#right {
+    right: 15px;
+}
+#top {
+    left: 15px;
+    right: 15px;
+    top: 15px;
+    height: 5px;
+}
+#bottom {
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    height: 5px;
+}
