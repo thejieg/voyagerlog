@@ -31,28 +31,29 @@ ul{
     list-style-type: disc;
 }
 #container{
-    width: 65%;
+    width: 50%;
     height: auto;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 10%;
     margin-bottom: 10%;
 }
 #content_container{
     width: 65%;
     height: auto;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 5%;
 }
 #content_container img{
-    max-width: 100%;
+    max-width: 80%;
     max-height: auto;
 }
 
 p{
     margin: 20px 0px;
     font-weight: 300;
+    max-width: 80%;
 }
 
 
@@ -74,6 +75,7 @@ blockquote{
     font-weight: 300;
     padding-left: 10px;
     color: #8e8e8e;
+    max-width: 80%;
 
 }
 
