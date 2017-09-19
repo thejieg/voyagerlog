@@ -153,7 +153,7 @@
 @media (max-width:400px){
   .container {
     margin: 0;
-    padding: 0 20px 0 20px;
+    padding-left: 10px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -199,17 +199,32 @@
       grid-area: logo;
       font-size: 1em;
       font-weight: bold;
-      align-items: center;
-      margin: auto 0;
 
   }
-
   .tabs{
-      display: flex;
-      font-size: 1em;
-      align-items: baseline;
-      margin: auto 0;
+      grid-area: tabs;
+      justify-content: space-between;
+      font-size: 0.65em;
+      padding: 20px;
   }
+
+  h2{
+    font-size: 0.75em;
+  }
+
+  p{
+    font-size: 0.75em;
+  }
+  a.special{
+    font-size: 0.75em;
+    font-weight: normal;
+    color: blue;
+    text-decoration: none;
+  }
+  .label{
+    width: 80px;
+    background-color: yellow;
+    padding:4px 4px 4px 4px;
 }
 /*-----------START content styles-----------*/
 
