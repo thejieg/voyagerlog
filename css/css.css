@@ -150,13 +150,11 @@
       margin: auto 0;
   }
 }
-@media (max-width:400px){
-  .container {
-    margin: 0;
-    padding-left: 10px;
+.container {
+    max-width: 360px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
     grid-template-areas:
     "header"
     "intro"
@@ -165,66 +163,57 @@
   }
 
   .header{
-    grid-area: header;
-    grid-template-columns: 1fr;
-    margin: 0;
-    padding: 20px 0 20px 0;
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-areas:
     "logo"
     "tabs";
   }
 
-  .intro{
-    grid-area: intro;
-    margin: 0;
-    padding: 0 0 10px 0;
+  .logo{
 
+      grid-area: logo;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: 0 auto;
+      padding:20px 0 10px 0;
+      align-items: center;
+
+  }
+
+  .tabs{
+    grid-area: tabs;
+    font-size: 0.95em;
+    margin: 0 auto;
+    padding:0 0 10px 0;
+    align-items: center;
+  }
+
+  ul{
+      list-style: none;
+      display: flex;
+      margin: 0 auto;
+      padding: 0;
+
+
+  }
+
+  ul li{
+      margin: 0;
+      padding: 0 20px;
   }
 
   .log{
     margin: 0;
     padding:  10px 0 10px 0;
   }
-
   .album{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-auto-rows: dense;
     grid-row-gap: 10px;
-  }
-
-  .logo{
-      grid-area: logo;
-      font-size: 1em;
-      font-weight: bold;
-
-  }
-  .tabs{
-      grid-area: tabs;
-      justify-content: space-between;
-      font-size: 0.65em;
-      padding: 20px;
-  }
-
-  h2{
-    font-size: 0.75em;
-  }
-
-  p{
-    font-size: 0.75em;
-  }
-  a.special{
-    font-size: 0.75em;
-    font-weight: normal;
-    color: blue;
-    text-decoration: none;
-  }
-  .label{
-    width: 80px;
-    background-color: yellow;
-    padding:4px 4px 4px 4px;
+    padding: 10px 0 10px 0;
   }
 }
 /*-----------START content styles-----------*/
