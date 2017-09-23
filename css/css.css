@@ -239,16 +239,18 @@
       width: 100%;
       color: black;
       background-color: white;
+
   }
 
   h2{
-      font-size: 1em;
+      font-size: 1.5em;
       font-weight: 300;
       padding: 20px 0 0 0;
   }
   p{
       font-weight: 300;
       font-size: 0.95em;
+      color: black;
   }
 
   img{
@@ -281,15 +283,33 @@
     color: #383838;
   }
 
+  .quote{
+
+    font-size: 1.8em;
+    font-weight: lighter;
+    color: #484848;
+    line-height: 1.5;
+
+  }
+
+  .announcement{
+
+    font-size: 12px;
+    font-weight: lighter;
+    color: #D0D0D0;
+    line-height: 1.4;
+
+  }
 
   /* -----------START horizontal linebreak styles-----------*/
   hr {
       display:block;
       margin-top:3em;
-      margin-bottom:0;
+      margin-bottom: 10px;
       border-style: solid;
       border-width: 1px;
       border-color:#E8E8E8;
+
   }
 
   hr.breakline{
